@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body >
+<div id="header"> 
+		<a href="index.html" class="logo">
+			<img src="images/logo2.jpg" alt="">
+			<img src="images/logo.jpg" alt="">
+		</a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<form name="loginForm" method="post" action="first.html">
+<table width="20%" bgcolor="0099CC" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>VRNA Music World Login</b></font></center></td>
+</tr>
+
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<center><td><input type="submit" onclick="return check(this.form)" value="Login"></td></center>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "vrna" && form.pwd.value == "vrna")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
